@@ -74,3 +74,45 @@ Migrating to CreateMovies (20171216165047)
   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-16 16:52:54.931773"], ["updated_at", "2017-12-16 16:52:54.931773"]]
   [1m[35m (129.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Star Wars"], ["rating", "PG"], ["release_date", "1977-04-25 00:00:00"], ["created_at", "2017-12-16 16:56:13.845150"], ["updated_at", "2017-12-16 16:56:13.845150"]]
+  [1m[35m (129.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Requiem for a Dream"], ["rating", "R"], ["release_date", "2000-10-27 00:00:00"], ["created_at", "2017-12-16 16:56:14.778204"], ["updated_at", "2017-12-16 16:56:14.778204"]]
+  [1m[35m (91.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Field of Dreams"], ["rating", "PG"], ["release_date", "0089-04-21 00:00:00"], ["created_at", "2017-12-16 16:56:15.525246"], ["updated_at", "2017-12-16 16:56:15.525246"]]
+  [1m[35m (99.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE (rating = 'PG') LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE (release_date < 'Jan 1, 2000' and rating = 'PG') LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "movies" SET "description" = ?, "release_date" = ?, "updated_at" = ? WHERE "movies"."id" = ?[0m  [["description", "The best space western EVER"], ["release_date", "1977-05-25 00:00:00"], ["updated_at", "2017-12-16 16:56:16.911326"], ["id", 1]]
+  [1m[35m (90.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "movies" SET "rating" = ?, "updated_at" = ? WHERE "movies"."id" = ?[0m  [["rating", "NC-17"], ["updated_at", "2017-12-16 16:56:17.092336"], ["id", 2]]
+  [1m[35m (86.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 2]]
+  [1m[35m (89.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE (title = "Requiem for a Dream") LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE (rating = "PG")[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 1]]
+  [1m[35m (91.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 3]]
+  [1m[35m (113.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aladdin"], ["rating", "G"], ["release_date", "1992-11-25 00:00:00"], ["created_at", "2017-12-16 16:57:34.940789"], ["updated_at", "2017-12-16 16:57:34.940789"]]
+  [1m[35m (102.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "When Harry Met Sally"], ["rating", "R"], ["release_date", "1989-07-21 00:00:00"], ["created_at", "2017-12-16 16:57:35.048795"], ["updated_at", "2017-12-16 16:57:35.048795"]]
+  [1m[35m (96.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Help"], ["rating", "PG-13"], ["release_date", "2011-08-10 00:00:00"], ["created_at", "2017-12-16 16:57:35.148801"], ["updated_at", "2017-12-16 16:57:35.148801"]]
+  [1m[35m (97.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Raiders of the Lost Ark"], ["rating", "PG"], ["release_date", "1981-06-12 00:00:00"], ["created_at", "2017-12-16 16:57:35.248806"], ["updated_at", "2017-12-16 16:57:35.248806"]]
+  [1m[35m (84.0ms)[0m  [1m[36mcommit transaction[0m

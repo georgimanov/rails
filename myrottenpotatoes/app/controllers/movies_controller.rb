@@ -9,4 +9,8 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.html.haml by default
   end
 
+  def new
+    @movie = Movie.new
+    # default: render 'new' template
+  end
 end

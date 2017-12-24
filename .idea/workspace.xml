@@ -41,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myrottenpotatoes/app/views/movies/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myrottenpotatoes/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,6 +120,7 @@
         <option value="$PROJECT_DIR$/myrottenpotatoes/app/views/movies/edit.html.haml" />
         <option value="$PROJECT_DIR$/myrottenpotatoes/app/controllers/movies_controller.rb" />
         <option value="$PROJECT_DIR$/myrottenpotatoes/app/views/movies/show.html.haml" />
+        <option value="$PROJECT_DIR$/myrottenpotatoes/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -212,6 +223,13 @@
               <item name="rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="rails" type="462c0819:PsiDirectoryNode" />
               <item name="myrottenpotatoes" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rails" type="462c0819:PsiDirectoryNode" />
+              <item name="myrottenpotatoes" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -250,12 +268,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514073592643</updated>
       <workItem from="1514073594297" duration="278000" />
-      <workItem from="1514073918090" duration="2578000" />
+      <workItem from="1514073918090" duration="3583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2856000" />
+    <option name="totallyTimeSpent" value="3861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -377,6 +395,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myrottenpotatoes/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>

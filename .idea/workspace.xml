@@ -21,7 +21,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myrottenpotatoes/app/views/movies/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -31,11 +31,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myrottenpotatoes/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myrottenpotatoes/app/views/movies/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+              <caret line="16" column="67" lean-forward="false" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -67,6 +77,7 @@
         <option value="$PROJECT_DIR$/myrottenpotatoes/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/myrottenpotatoes/app/controllers/movies_controller.rb" />
         <option value="$PROJECT_DIR$/myrottenpotatoes/app/views/movies/show.html.haml" />
+        <option value="$PROJECT_DIR$/myrottenpotatoes/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -76,7 +87,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-19" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
@@ -113,6 +124,21 @@
               <item name="rails" type="462c0819:PsiDirectoryNode" />
               <item name="myrottenpotatoes" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rails" type="462c0819:PsiDirectoryNode" />
+              <item name="myrottenpotatoes" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rails" type="462c0819:PsiDirectoryNode" />
+              <item name="myrottenpotatoes" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rails" type="b2602c69:ProjectViewProjectNode" />
@@ -180,15 +206,15 @@
       <option name="presentableId" value="Default" />
       <updated>1514073592643</updated>
       <workItem from="1514073594297" duration="278000" />
-      <workItem from="1514073918090" duration="645000" />
+      <workItem from="1514073918090" duration="741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="923000" />
+    <option name="totallyTimeSpent" value="1019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -240,7 +266,7 @@
     <entry file="file://$PROJECT_DIR$/myrottenpotatoes/app/views/movies/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+          <caret line="16" column="67" lean-forward="false" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -265,6 +291,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myrottenpotatoes/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
           <folding />
         </state>
       </provider>

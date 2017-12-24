@@ -5,8 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 	'
+# making your Gemfile safe for Heroku
+ruby '2.3.0' # just in case - tell Heroku which Ruby version we need
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -50,8 +50,6 @@ gem 'bundler'
 #use Haml for templates
 gem 'haml'
 
-# making your Gemfile safe for Heroku
-ruby '2.3.0' # just in case - tell Heroku which Ruby version we need
 group :development, :test do
  # make sure sqlite3 gem ONLY occurs inside development & test groups
  gem 'sqlite3' # use SQLite only in development and testing
